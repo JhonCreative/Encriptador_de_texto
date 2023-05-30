@@ -1,5 +1,12 @@
 const textArea = document.querySelector(".text-area");
 const mensaje = document.querySelector(".text-mensaje");
+const button = document.querySelector(".copiar");
+const texto = document.querySelector(".text-info");
+
+button.addEventListener('click', e => {
+    mensaje.select();
+    document.execCommand('copy');
+})
 
 function btnEncriptar() {
     const textoEncriptado = encriptar(textArea.value)
@@ -17,6 +24,7 @@ function encriptar(stringEncriptado){
             stringEncriptado = stringEncriptado.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1])
         }        
     }
+    texto.style.display = "none"
     return stringEncriptado
 }
 
@@ -35,5 +43,6 @@ function desencriptar(stringDesencriptado){
             stringDesencriptado = stringDesencriptado.replaceAll(matrizCodigo[i][1], matrizCodigo[i][0])
         }        
     }
+    texto.style.display = "none"
     return stringDesencriptado
 }

@@ -1,3 +1,137 @@
 *{
-    background: #f3f5fc;
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0;
+    margin: 0;
 }
+body{
+    /*background: url(https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat center;*/
+    /*background-size: cover;*/
+    background:linear-gradient(to right, #f3e1b6, #7cbc9a);
+}
+/* Header */
+header{
+    width: 100%;
+    height: 90px;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    padding: 10px 40px;
+}
+.logos{
+    display: flex;
+    gap: 10px;
+}
+.about{
+    display: flex;
+    gap: 20px;
+}
+.logo-alura,
+.logo-oracle{
+    height: 60px;
+}
+.logo-alura{
+    padding-right: 20px;
+    border-right: solid #1d5e69;
+}
+.logo-git,
+.logo-linkedin{
+    height: 30px;
+}
+.logo-count{
+    width: 30px;
+    height: 30px;
+    background: url(../img/person.jpg) no-repeat center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+/* Ingrese texto */
+main{
+    height: 75vh;
+    display: flex;
+    padding: 10px 40px;
+    justify-content:space-between;
+}
+.input-text{
+    width: 70%;
+    height: 100%;
+}
+.text-area{
+    resize: none;
+    width: 90%;
+    height: 80%;
+    color: #1d5e69;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 30px;
+    border: 3px solid #fafafa10;
+    border-radius: 1rem;
+    padding: 20px;
+    background: #fafafa10;
+    backdrop-filter: blur(0.4rem);
+}
+/* end ingrese texto */
+
+/* output texto */
+.output-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    font-weight: 400;
+    font-size: 19px;
+    border: 3px solid #fafafa10;
+    border-radius: 1rem;
+    justify-content:space-between;
+    padding: 20px;
+    background: #fafafa10;
+    backdrop-filter: blur(0.4rem);
+}
+.text-mensaje{
+    resize: none;
+    width: 100%;
+    height: 60%;
+    border: none;
+    color: #fa3419;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 30px;
+}
+.info1{
+    width: 210px;
+    height: 58px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+}
+.info2{
+    width: 260px;
+    height: 48px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+}
+/* end output texto */
+
+/* Boton Copiar*/
+
+/* end boton copiar*/
+
+/* end header*/
+.text-mensaje{
+    background: url(../img/Muñeco.svg) no-repeat center;
+}
+/*
+.color1 { #fa3419 };
+.color2 { #f3e1b6 };
+.color3 { #7cbc9a };
+.color4 { #23998e };
+.color5 { #1d5e69 };
+*/

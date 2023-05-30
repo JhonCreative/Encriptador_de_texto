@@ -6,13 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de texto</title>
     <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img class="logo" src="./static/img/Vector.svg" alt="">
+        <section class="nav">
+            <div class="logos">
+                <img class="logo-alura" src="./static/img/logo-alura.svg" alt="">
+                <img class="logo-oracle" src="./static/img/logo-oracle.svg" alt="">
+            </div>
+            <div class="about">
+                <a href="" class="github">
+                    <img src="./static/img/logo-github.svg" alt="" class="logo-git">
+                </a>
+                <a href="" class="linkedin">
+                    <img src="./static/img/logo-linkedin.svg" alt="" class="logo-linkedin">
+                </a>
+                <a href="" class="perfil">
+                    <div class="logo-count">&nbsp;</div>
+                </a>
+            </div>
+        </section>
     </header>
     <main>
-        <section>
+        <section class="input-text">
             <textarea cols="30" rows="10" class="text-area" placeholder="Ingrese el texto aqui"></textarea>
             <div>
                 <p class="informacion">Solo letras minusculas y sin acento</p>
@@ -22,10 +41,18 @@
                 <button class="desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
             </div>
         </section>
-        <section>
+        <section class="output-text">
             <textarea class="text-mensaje" cols="20" rows="10"></textarea>
+            <div class="text-info">
+                <div class="info1">
+                    <p class="info-principal">Ningún mensaje fue encontrado</p>
+                </div>
+                <div class="info2">
+                    <p class="info-second">Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+            </div>
             <div class="copi">
-                <button class="copiar">Copiar</button>
+                <button class="copiar" onclick="btnCopiar()">Copiar</button>
             </div>
         </section>
     </main>
